@@ -7,16 +7,77 @@
     <title>Introduction to JavaScript rest parameters</title>
   </head>
   <body>
+    <h1>Introduction to JavaScript rest parameters</h1>
     <script>
-      function sum(...args) {
-        let total = 0;
-        for (const a of args) {
-          total += a;
-        }
-        return total;
+      // example 1
+
+      function a() {
+        let spreadExample = [1, 2, 3];
+
+        console.log(Math.min(...spreadExample));
+      }
+      a();
+      // example 2
+
+      function b() {
+        let spreadExample = [2, 3, 4];
+        console.log(Math.min(...spreadExample));
+      }
+      b();
+
+      // example 3
+      function c() {
+        let spreadExample = [3, 4, 5];
+        console.log(Math.min(...spreadExample));
+      }
+      c();
+
+      // example 4
+      function d() {
+        let spreadExample = [4, 5, 6];
+        console.log(Math.min(...spreadExample));
+      }
+      d();
+
+      // example 5
+      function e() {
+        let spreadExample = [5, 6, 7];
+        console.log(Math.min(...spreadExample));
       }
 
-      sum(1, 2, 3);
+      // example 6
+      function f() {
+        let spreadExample = [6, 7, 8];
+        console.log(Math.min(...spreadExample));
+      }
+      f();
+
+      // example 7
+      function g() {
+        let spreadExample = [8, 9, 10];
+        console.log(Math.min(...spreadExample));
+      }
+      g();
+
+      // example 8
+      function h() {
+        let spreadExample = [10, 11, 12];
+        console.log(Math.min(...spreadExample));
+      }
+      h();
+
+      // example 9
+      function i() {
+        let spreadExample = [11, 12, 13];
+        console.log(Math.min(...spreadExample));
+      }
+      i();
+
+      // example 10
+      function j() {
+        let spreadExample = [12, 13, 14];
+        console.log(Math.min(...spreadExample));
+      }
     </script>
   </body>
 </html>
